@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dingshiqiwpm\startup_stm32f103xb.o"
+"dingshiqiwpm\main.o"
+"dingshiqiwpm\gpio.o"
+"dingshiqiwpm\tim.o"
+"dingshiqiwpm\stm32f1xx_it.o"
+"dingshiqiwpm\stm32f1xx_hal_msp.o"
+"dingshiqiwpm\stm32f1xx_hal_gpio_ex.o"
+"dingshiqiwpm\stm32f1xx_hal_tim.o"
+"dingshiqiwpm\stm32f1xx_hal_tim_ex.o"
+"dingshiqiwpm\stm32f1xx_hal.o"
+"dingshiqiwpm\stm32f1xx_hal_rcc.o"
+"dingshiqiwpm\stm32f1xx_hal_rcc_ex.o"
+"dingshiqiwpm\stm32f1xx_hal_gpio.o"
+"dingshiqiwpm\stm32f1xx_hal_dma.o"
+"dingshiqiwpm\stm32f1xx_hal_cortex.o"
+"dingshiqiwpm\stm32f1xx_hal_pwr.o"
+"dingshiqiwpm\stm32f1xx_hal_flash.o"
+"dingshiqiwpm\stm32f1xx_hal_flash_ex.o"
+"dingshiqiwpm\stm32f1xx_hal_exti.o"
+"dingshiqiwpm\system_stm32f1xx.o"
+--strict --scatter "dingshiqiWPM\dingshiqiWPM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dingshiqiWPM.map" -o dingshiqiWPM\dingshiqiWPM.axf
